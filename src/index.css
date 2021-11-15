@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0px;
+    padding: 0px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#parent {
+    height: 85vh;
+    border: 3px solid grey;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#controls {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#controls button {
+    width: 120px;
+    height: 38px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.box {
+    position: absolute;
+    cursor: move;
+    color: black;
+    max-width: 215px;
+    margin: auto;
+    user-select: none;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: auto;
+}
+
+#handle {
+    cursor: move;
+}
+
+.textInput {
+    height: 20px;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid transparent;
+    outline: none;
+    background: none;
+}
+
+.textInput:hover {
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.textInput:focus,
+.textInput:active {
+    border: 1px solid grey;
+    outline: none;
+    background-color: white;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input {
+    margin: 0 auto;
+    max-width: 96% !important;
+    padding: 2px 0px;
+    border: 1px solid grey;
+
+}
+
+#name {
+    width: 100%;
+}
+
+#height,
+#width {
+    width: 30%;
+}
+
+#proTable {
+    border: 3px solid grey;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+td,
+th {
+    border: 1px solid lightgrey;
+}
+
+select {
+    width: 50%;
+    height: 26px;
+    font-size: 16px;
+}
+
+option {
+    font-size: 20px;
+}
